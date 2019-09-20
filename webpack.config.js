@@ -18,11 +18,12 @@ function generateBabelOptions(variation) {
 
   if (variation === 'node') {
     return {
-      plugins: [
+      presets: [
         [
-          '@babel/plugin-transform-runtime',
+          '@babel/preset-env',
           {
-            corejs: false,
+            useBuiltIns: false,
+            targets: '> 1% and not dead, ie 11',
           },
         ],
       ],
