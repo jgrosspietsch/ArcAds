@@ -54,7 +54,7 @@
     "webpack-cli": "^3.3.8"
   },
   "dependencies": {
-    "@babel/runtime-corejs2": "^7.6.0"
+    "@babel/runtime": "^7.6.0"
   },
   "homepage": "https://github.com/washingtonpost/arcads#readme"
 }

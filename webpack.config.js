@@ -22,7 +22,7 @@ function generateBabelOptions(variation) {
         [
           '@babel/plugin-transform-runtime',
           {
-            corejs: 2,
+            corejs: false,
           },
         ],
       ],
