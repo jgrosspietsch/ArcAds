@@ -37,6 +37,7 @@ module.exports = ['browser', 'node'].map((variation) => ({
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: variation === 'browser' ? 'arcads.js' : 'arcads.node.js',
+    globalObject: variation === 'browser' ? 'window' : 'typeof self !== \'undefined\' ? self : this',
     libraryTarget: 'umd',
   },
   devtool: process.env.NODE_ENV === 'development' ? 'inline-source-map' : false,
